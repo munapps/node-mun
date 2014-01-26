@@ -7,7 +7,7 @@ var require = patchRequire(require);
 var config = exports;
 
 config.casperOptions = {
-	"clientScripts": ["./utils.js"],
+	"clientScripts": [],
 	"exitOnError": true,
 	"logLevel": "error",
 	"pageSettings": {
