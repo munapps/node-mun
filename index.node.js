@@ -14,7 +14,7 @@ var casperjs = function casperjs(filename, args) {
 		utils.quote(path.join(CASPERJS_PATH, "bin", "bootstrap.js")),
 		"--casper-path=" + utils.quote(CASPERJS_PATH),
 		"--cli",
-		"index.casper.js",
+		utils.quote(path.resolve(__dirname, "./index.casper.js")),
 		"--script=" + utils.quote(path.relative(__dirname, filename))
 	]
 	.concat(args)
