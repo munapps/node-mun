@@ -1,3 +1,5 @@
+/* jshint phantom: true */
+/* global patchRequire */
 "use strict";
 
 var require = patchRequire(require);

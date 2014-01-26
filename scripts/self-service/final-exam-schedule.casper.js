@@ -1,3 +1,4 @@
+/* jshint phantom: true */
 "use strict";
 
 var selfService = require("./self-service");

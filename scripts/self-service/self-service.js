@@ -1,3 +1,5 @@
+/* jshint phantom: true, -W069: true */
+/* global patchRequire */
 "use strict";
 
 var require = patchRequire(require);
@@ -47,6 +49,7 @@ selfService.steps.parseFinalExamSchedule = function () {
 };
 selfService.steps.parseAcademicRecord = function () {
 	this.echo(this.evaluate(function () {
+		/* jshint ignore: start */
 		String.prototype.toMixedCamelCase = function () {
 			return this.trim().replace(/([^\W_]+[^\s-]*) */g, function(s) {
 				return s.charAt(0).toUpperCase() + s.substring(1).toLowerCase();
@@ -56,6 +59,7 @@ selfService.steps.parseAcademicRecord = function () {
 				return s.toLowerCase();
 			});
 		};
+		/* jshint ignore: end */
 		var tableRows = Array.prototype.slice.call(this.document.querySelectorAll(".pagebodydiv table")[1].tBodies[0].rows, 0)
 		.filter(function (e, i, a) {
 			return (e.children.length !== e.querySelectorAll(".ddseparator").length);
