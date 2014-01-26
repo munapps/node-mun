@@ -1,0 +1,11 @@
+{
+	"dependencies": {"glob": "*"},
+	"devDependencies": {
+		"grunt": "*",
+		"grunt-contrib-jshint": "*"
+	},
+	"main": "index.node.js",
+	"name": "MUN",
+	"private": true,
+	"version": "0.0.0"
+}
