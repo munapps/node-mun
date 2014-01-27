@@ -1,7 +1,8 @@
 /* jshint node: true */
 "use strict";
 
-var exec = require("child_process").exec;
+var q = require("q");
+var exec = q.denodeify(require("child_process").exec);
 var glob = require("glob");
 var path = require("path");
 var utils = require("./utils");
@@ -26,7 +27,9 @@ glob.sync(path.join(__dirname, "scripts/**/*.casper.js")).forEach(function (e, i
 	var module = utils.hyphensToCamelCase(path.basename(path.dirname(e)));
 	var script = utils.hyphensToCamelCase(path.basename(e).split(".")[0]);
 	MUN[module] = MUN[module] || {};
-	MUN[module][script] = function (args, cb) { exec(casperjs(e, args), cb); };
+	MUN[module][script] = function (args) {
+		return exec(casperjs(e, Array.prototype.slice.call(arguments)));
+	};
 });
 
 module.exports = MUN;

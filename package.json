@@ -1,5 +1,5 @@
 {
-	"dependencies": {"glob": "*"},
+	"dependencies": {"glob": "*", "q": "*"},
 	"devDependencies": {
 		"grunt": "*",
 		"grunt-contrib-jshint": "*"
