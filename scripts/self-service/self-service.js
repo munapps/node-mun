@@ -108,7 +108,6 @@ selfService.steps.parseAcademicRecord = function () {
 					});
 					label = labels[0].childNodes[0].textContent.toMixedCamelCase();
 					placeholder["totals"][label.substring(0, label.length - 1)] = tmp;
-
 				}
 				if (labels.length === 0 && defaults.length > 0) {
 					tmp = {};
