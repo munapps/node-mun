@@ -18,7 +18,7 @@ var casperjs = function casperjs(filename, args) {
 		utils.quote(path.resolve(__dirname, "./index.casper.js")),
 		"--script=" + utils.quote(path.relative(__dirname, filename))
 	]
-	.concat(args)
+	.concat(args || [])
 	.join(" ");
 };
 
@@ -27,7 +27,7 @@ glob.sync(path.join(__dirname, "scripts/**/*.casper.js")).forEach(function (e, i
 	var module = utils.hyphensToCamelCase(path.basename(path.dirname(e)));
 	var script = utils.hyphensToCamelCase(path.basename(e).split(".")[0]);
 	MUN[module] = MUN[module] || {};
-	MUN[module][script] = function (args) {
+	MUN[module][script] = function () {
 		return exec(casperjs(e, Array.prototype.slice.call(arguments)));
 	};
 });
