@@ -12,6 +12,7 @@ var CASPERJS_PATH = path.resolve(__dirname, "./casperjs");
 var casperjs = function casperjs(filename, args) {
 	return [
 		"phantomjs", // Engine name (either PhantomJS or SlimerJS)
+		"--ignore-ssl-errors=true", // Ignore SSL errors such as expired or self-signed certificate errors
 		utils.quote(path.join(CASPERJS_PATH, "bin", "bootstrap.js")),
 		"--casper-path=" + utils.quote(CASPERJS_PATH),
 		"--cli",
