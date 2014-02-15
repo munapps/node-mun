@@ -8,7 +8,12 @@ module.exports = function (grunt) {
 		"options": {
 			"jshintrc": true
 		},
-		"all": ["*.js", "**/*.js"]
+		"all": ["*.js", "**/*.js", "tests/*.js"]
+	});
+
+	grunt.loadNpmTasks("grunt-contrib-nodeunit");
+	grunt.config("nodeunit", {
+		all: ["tests/*.js"]
 	});
 
 	grunt.registerTask("default", "Does nothing.", function () {

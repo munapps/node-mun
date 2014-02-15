@@ -19,7 +19,7 @@ var casperjs = function casperjs(filename, args) {
 		utils.quote(path.resolve(__dirname, "./index.casper.js")),
 		"--script=" + utils.quote(path.relative(__dirname, filename))
 	]
-	.concat(args || [])
+	.concat(args ? args.map(utils.escapeshellarg) : [])
 	.join(" ");
 };
 

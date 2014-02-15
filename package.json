@@ -2,7 +2,8 @@
 	"dependencies": {"glob": "*", "q": "*"},
 	"devDependencies": {
 		"grunt": "*",
-		"grunt-contrib-jshint": "*"
+		"grunt-contrib-jshint": "*",
+		"grunt-contrib-nodeunit": "*"
 	},
 	"main": "index.node.js",
 	"name": "MUN",
