@@ -28,8 +28,8 @@ glob.sync(path.join(__dirname, "scripts/**/*.casper.js")).forEach(function (e, i
 	var module = utils.hyphensToCamelCase(path.basename(path.dirname(e)));
 	var script = utils.hyphensToCamelCase(path.basename(e).split(".")[0]);
 	MUN[module] = MUN[module] || {};
-	MUN[module][script] = function () {
-		return exec(casperjs(e, Array.prototype.slice.call(arguments)));
+	MUN[module][script] = function (args) {
+		return exec(casperjs(e, args));
 	};
 });
 
