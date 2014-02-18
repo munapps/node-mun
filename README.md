@@ -32,6 +32,16 @@ function (error) {
 });
 ```
 
+Look at scripts in the [examples folder](examples) for other services. The list of things you can currently access:
+
+- Cancellations
+- Your academic record
+- Your final exams
+
+### Note
+
+This is very much a work in progress. If there are services or data that you'd like to be able to access this way, please please please please either comment on the [super services megalist issue](https://github.com/whymarrh/node-mun/issues/5) or open up a brand new issue. Together we can make programmatic access to all of MUN's services possible.
+
 License
 -------
 
