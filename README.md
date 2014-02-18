@@ -1,5 +1,5 @@
-node-mun
-========
+MUN
+===
 
 A Node.js module for pulling data from various MUN web places.
 
