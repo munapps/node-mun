@@ -1,10 +1,12 @@
-MUN
+MUN [![Build Status](https://travis-ci.org/whymarrh/node-mun.png)](https://travis-ci.org/whymarrh/node-mun)
 ===
 
 A Node.js module for pulling data from various MUN web places.
 
-Getting started
----------------
+Downloading
+-----------
+
+You need a copy of both this repository and [CasperJS]:
 
 ```bash
 $ git clone git://github.com/whymarrh/node-mun.git
@@ -38,11 +40,16 @@ Look at scripts in the [examples folder](examples) for other services. The list 
 - Your academic record
 - Your final exams
 
+But there are many more planned; see the [super services megalist issue] for what's in the pipeline.
+
 ### Note
 
-This is very much a work in progress. If there are services or data that you'd like to be able to access this way, please please please please either comment on the [super services megalist issue](https://github.com/whymarrh/node-mun/issues/5) or open up a brand new issue. Together we can make programmatic access to all of MUN's services possible.
+This is very much a work in progress. If there are services or data that you'd like to be able to access this way, please please please please either comment on the [super services megalist issue] or open up a brand new issue. Together we can make programmatic access to all of MUN's services possible.
 
 License
 -------
 
 This software is released under the BSD 3-Clause License. See [LICENSE.md](LICENSE.md) for more information.
+
+  [CasperJS]:http://casperjs.org/
+  [super services megalist issue]:https://github.com/whymarrh/node-mun/issues/5
