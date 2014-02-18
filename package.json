@@ -1,9 +1,10 @@
 {
-	"dependencies": {"glob": "*", "q": "*"},
-	"devDependencies": {
+	"dependencies": {
+		"glob": "*",
 		"grunt": "*",
 		"grunt-contrib-jshint": "*",
-		"grunt-contrib-nodeunit": "*"
+		"grunt-contrib-nodeunit": "*",
+		"q": "*"
 	},
 	"main": "index.node.js",
 	"name": "MUN",
