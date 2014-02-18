@@ -3,6 +3,16 @@ node-mun
 
 A Node.js module for pulling data from various MUN web places.
 
+Getting started
+---------------
+
+```bash
+$ git clone git://github.com/whymarrh/node-mun.git
+$ cd node-mun
+$ git clone git://github.com/n1k0/casperjs.git
+$ npm install
+```
+
 License
 -------
 
