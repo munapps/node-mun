@@ -1,22 +1,26 @@
 /* global module */
 module.exports = function (grunt) {
 	"use strict";
+
+	// Blank slate
 	grunt.initConfig({});
 
+	// JSHint
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.config("jshint", {
-		"options": {
-			"jshintrc": true
-		},
+		"options": { "jshintrc": true },
 		"all": ["*.js", "**/*.js", "tests/*.js"]
 	});
 
+	// nodeunit
 	grunt.loadNpmTasks("grunt-contrib-nodeunit");
 	grunt.config("nodeunit", {
-		all: ["tests/*.js"]
+		all: ["tests/*.js"],
+		options: { reporter: "minimal" }
 	});
 
-	grunt.registerTask("default", "Does nothing.", function () {
-		grunt.log.write("Doing nothing.");
-	});
+	// Default task
+	grunt.registerTask("default", "Does nothing.", function () { /* Does nothing */ });
+	// Aliases
+	grunt.registerTask("test", ["jshint", "nodeunit"]);
 };
