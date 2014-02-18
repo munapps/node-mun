@@ -9,7 +9,7 @@ Getting started
 ```bash
 $ git clone git://github.com/whymarrh/node-mun.git
 $ cd node-mun
-$ git clone git://github.com/n1k0/casperjs.git
+$ git clone --depth=1 git://github.com/n1k0/casperjs.git
 $ npm install
 ```
 
