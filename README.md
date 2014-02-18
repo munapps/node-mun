@@ -13,6 +13,25 @@ $ git clone git://github.com/n1k0/casperjs.git
 $ npm install
 ```
 
+Getting data from places
+------------------------
+
+Let's pull the list of cancellations from the MUN website (available in [examples](examples/cancellations.js)):
+
+```js
+var MUN = require("..");
+
+MUN.campus.cancellations()
+.then(function (results) {
+    console.log("The list of cancellations:");
+    var cancellations = JSON.parse(results[0]);
+    console.log(cancellations);
+},
+function (error) {
+    console.error(error);
+});
+```
+
 License
 -------
 
