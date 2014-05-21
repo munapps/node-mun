@@ -21,8 +21,6 @@ Getting data from places
 Let's pull the list of cancellations from the MUN website (available in [examples](examples/cancellations.js)):
 
 ```js
-var MUN = require("..");
-
 MUN.campus.cancellations()
 .then(function (results) {
     console.log("The list of cancellations:");
