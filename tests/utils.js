@@ -1,7 +1,7 @@
 /* jshint node: true */
 "use strict";
 
-var utils = require("../utils");
+var utils = require("../lib/utils");
 
 exports.testEscapeshellarg = function (test) {
 	test.equals("", utils.escapeshellarg(""));
