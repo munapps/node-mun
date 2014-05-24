@@ -6,7 +6,7 @@
 		"grunt-contrib-nodeunit": "*",
 		"q": "*"
 	},
-	"main": "index.node.js",
+	"main": "lib/index.js",
 	"name": "MUN",
 	"private": true,
 	"version": "0.1.0"
