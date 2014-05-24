@@ -1,4 +1,4 @@
-MUN [![Build Status](https://travis-ci.org/whymarrh/node-mun.png)](https://travis-ci.org/whymarrh/node-mun)
+MUN
 ===
 
 A Node.js module for pulling data from various MUN web places.
