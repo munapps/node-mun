@@ -33,7 +33,7 @@ function (error) {
 });
 ```
 
-This is very much a work in progress. Take a look at the [list of services] for a complete picture of what you can and can't access. There is a lot planned, so pull requests are always welcome.
+This is very much a work in progress. Take a look at the [list of services](https://github.com/whymarrh/node-mun/wiki/List-of-Services) for a complete picture of what you can and can't access. There is a lot planned, so pull requests are always welcome.
 
 License
 -------
