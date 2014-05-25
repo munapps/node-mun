@@ -1,24 +1,25 @@
 MUN
 ===
 
+**Not affliliated with Memorial Univeristy of Newfoundland.**
+
 A node.js module for pulling data from various MUN web places.
 
 Downloading
 -----------
 
-You need a copy of both this repository and [CasperJS]:
+[CasperJS] is a submodule of this repository, so you will need to clone recursively to avoid the Git submodule dance:
 
 ```bash
-$ git clone git://github.com/whymarrh/node-mun.git
-$ cd node-mun
-$ git clone --depth=1 git://github.com/n1k0/casperjs.git
+$ git clone --recursive git://github.com/whymarrh/node-mun.git MUN
+$ cd MUN/
 $ npm install
 ```
 
-Getting data from places
-------------------------
+Getting things done
+-------------------
 
-Let's pull the list of cancellations from the MUN website (available in [examples](examples/cancellations.js)):
+Let's pull the list of cancellations from the MUN website (available as [examples/cancellations.js](examples/cancellations.js)):
 
 ```js
 MUN.campus.cancellations()
@@ -32,17 +33,7 @@ function (error) {
 });
 ```
 
-Look at scripts in the [examples folder](examples) for other services. The list of things you can currently access:
-
-- Cancellations
-- Your academic record
-- Your final exams
-
-But there are many more planned; see the [super services megalist issue] for what's in the pipeline.
-
-### Note
-
-This is very much a work in progress. If there are services or data that you'd like to be able to access this way, please please please please either comment on the [super services megalist issue] or open up a brand new issue. Together we can make programmatic access to all of MUN's services possible.
+This is very much a work in progress. Take a look at the [list of services] for a complete picture of what you can and can't access. There is a lot planned, so pull requests are always welcome.
 
 License
 -------
