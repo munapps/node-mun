@@ -1,9 +1,9 @@
 MUN
 ===
 
-**Not affliliated with Memorial Univeristy of Newfoundland.**
-
 A node.js module for pulling data from various MUN web places.
+
+**Not affliliated with Memorial Univeristy of Newfoundland.**
 
 Downloading
 -----------
