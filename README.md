@@ -3,7 +3,7 @@ MUN
 
 A node.js module for pulling data from various MUN web places.
 
-**Not affliliated with Memorial Univeristy of Newfoundland.**
+**Not affiliated with Memorial Univeristy of Newfoundland.**
 
 Downloading
 -----------
